@@ -1,0 +1,52 @@
+div#test-link-bg {
+	background-color: black;
+	position: fixed;
+	width: 39px;
+	height: 30px;
+	top: 8px;
+	left: 8px;
+}
+
+body {
+	background-color: teal;
+	border: solid black;
+	text-align: center;
+}
+
+/* main related */
+main#main-doc,
+section.main-section {
+	border: solid black;
+	margin: 5px;
+}
+
+/* navbar related */
+nav#navbar {
+	border: solid black;
+	margin: 5px;
+}
+
+nav div#nav-links {
+	display: flex;
+	flex-flow: column;
+}
+/* flex */
+body div#flex {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+/* media queries */
+@media only screen and (min-width: 700px) {
+	body div#flex {
+		flex-flow: row wrap;
+	}
+
+	div#flex nav#navbar {
+		flex: 0.2;
+	}
+
+	div#flex main#main-doc {
+		flex: 0.95;
+	}
+}

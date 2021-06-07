@@ -1,0 +1,57 @@
+body {
+	background-color: #d4f7d4;
+	text-align: center;
+}
+
+div#test-btn-bg {
+	background-color: #999696;
+	position: fixed;
+	top: 7px;
+	left: 8px;
+	width: 39px;
+	height: 30px;
+}
+
+/* navbar */
+nav#navbar {
+	background-color: #340933;
+	position: fixed;
+	width: 100vw;
+	height: 45px;
+	top: 0px;
+	left: 0px;
+}
+
+nav#navbar ul {
+	list-style: none;
+}
+
+/* flex */
+div#flex {
+	display: flex;
+	flex-flow: column;
+}
+
+/* Sections */
+section#welcome-section {
+	background-color: #9c0797;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
+
+section#projects {
+	background-color: #fbaa09;
+	border: solid #340933;
+	padding: 10px;
+	margin: 5px 0px 5px 0px;
+	height: 800px;
+}
+
+@media only screen and (max-width: 700px) {
+	body {
+		background-color: #549d53;
+	}
+}
