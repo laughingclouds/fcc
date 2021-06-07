@@ -12,10 +12,10 @@ function checkScope() {
 }
 
 // Declare a Read-Only Variable with the const Keyword
-function printManyTimes(str) {    
+function printManyTimes(str) {
     const SENTENCE = str + " is cool!";
 
-    for(let i = 0; i < str.length; i+=2) {
+    for (let i = 0; i < str.length; i += 2) {
         console.log(SENTENCE);
     }
 }
@@ -25,7 +25,7 @@ const s = [5, 7, 2];
 function editInPlace() {
     const arr = [2, 5, 7];
 
-    for(let i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
         s[i] = arr[i];
     }
 }
@@ -40,7 +40,7 @@ function freezeObj() {
 
     try {
         MATH_CONSTANTS.PI = 99;
-    } catch(ex) {
+    } catch (ex) {
         console.log(ex);
     }
     return MATH_CONSTANTS.PI;
@@ -67,3 +67,26 @@ function howMany(...args) {
 
 const callBckForSum = (acc, cur) => acc + cur;
 const sum = (...args) => args.reduce(callBckForSum, 0);
+
+// Use the Spread Operator to Evaluate Arrays In-Place
+let arr = [6, 89, 3, 45];
+let maximus = Math.max(...arr);
+//alternative solutions
+let maximus = Math.max.apply(null, arr);
+arr.reduce((a, b) => Math.max(a, b));
+
+// Use Destructuring Assignment to Extract Values from Objects
+const user = { name: 'John Doe', age: 34 };
+const { name, age } = user; // Order does not matter
+
+const HIGH_TEMPERATURES = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80
+};
+
+const { today, tomorrow } = HIGH_TEMPERATURES;
+
+// Use Destructuring Assignment to Assign Variables from Objects
+const { name: userName, age: userAge } = user;
+const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
