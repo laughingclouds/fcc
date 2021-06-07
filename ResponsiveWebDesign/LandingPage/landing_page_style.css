@@ -1,0 +1,50 @@
+body {
+	background-color: black;
+	color: white;
+}
+header,
+main section {
+	display: flex;
+	justify-content: space-around;
+}
+
+header {
+	position: fixed;
+	flex-direction: row;
+	align-items: center;
+	top: 0;
+	background-color: grey;
+}
+
+main {
+	position: relative;
+	top: 20px;
+}
+
+main section {
+	flex-direction: column;
+}
+img#header-img {
+	width: 80px;
+	height: 80px;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* unimportant, gives a little background for the test button */
+div#test-link-bg {
+	background-color: black;
+	display: inline-block;
+	padding: 0px;
+	height: 30px;
+	width: 39px;
+	position: fixed;
+	top: 7px;
+	left: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: lightblue;
+	}
+}

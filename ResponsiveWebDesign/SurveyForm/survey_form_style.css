@@ -1,76 +1,82 @@
-@media (max-width: 625px) , screen and (orientation: portrait){
-    main form {
-        box-shadow: 10px 10px 0px 0px rgb(170, 24, 24);
-        padding: 0px;
-    }
+@media (max-width: 625px), screen and (orientation: portrait) {
+	main form {
+		box-shadow: 10px 10px 0px 0px rgb(170, 24, 24);
+		padding: 0px;
+	}
 }
 
 @media (hover: hover) {
-    body{
-        color: black;
-    }
+	body {
+		color: black;
+	}
 }
 
 body {
-    background-color: rgb(3, 88, 3);
-    text-align: center;
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
+	background-color: rgb(3, 88, 3);
+	text-align: center;
+	color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
 }
 
-header, main, footer, input, label, fieldset{
-    padding: 10px;
+header,
+main,
+footer,
+input,
+label,
+fieldset {
+	padding: 10px;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 main form {
-    align-self: center;
-    box-shadow: 0px 0px 10px 7px black;
-    padding: 10px;
-    border-radius: 5px;
-    width: 50%;
-    height: auto;
-    justify-content: space-around;
+	align-self: center;
+	box-shadow: 0px 0px 10px 7px black;
+	padding: 10px;
+	border-radius: 5px;
+	width: 50%;
+	height: auto;
+	justify-content: space-around;
 }
 
 /* This will allow the textarea to be expanded vertically only */
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 
 #survey-form-child-fieldset {
-    background-image: url("https://cdn.discordapp.com/attachments/839836667657060403/840691974722027530/ink_dragon_2.jpg");
+	background-image: url("https://cdn.discordapp.com/attachments/839836667657060403/840691974722027530/ink_dragon_2.jpg");
 }
 
-.fieldset-flex, fieldset.fieldset-flex div {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-fieldset.fieldset-child-flex div {
-    align-items: flex-start;
-    flex-direction: row;
-}
-
-div{
-    padding: 10px;
-    margin: 0px;
+.fieldset-flex,
+fieldset.fieldset-flex div {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
 }
 
 fieldset.fieldset-child-flex div {
-    padding: 5px;
+	align-items: flex-start;
+	flex-direction: row;
+}
+
+div {
+	padding: 10px;
+	margin: 0px;
+}
+
+fieldset.fieldset-child-flex div {
+	padding: 5px;
 }
 
 input#submit {
-    align-self: center;
+	align-self: center;
 }
 
 footer {
-    text-align: left;
+	text-align: left;
 }
