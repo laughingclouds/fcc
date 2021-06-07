@@ -1,0 +1,48 @@
+body {
+	background-color: rgb(195, 198, 14);
+	text-align: center;
+	margin: 0px;
+}
+
+h1#title {
+	max-width: 100%;
+	height: auto;
+}
+
+img#image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* #006780 */
+div#img-div {
+	justify-items: right;
+	padding: 10px;
+	background-color: #f85591;
+}
+
+blockquote {
+	margin: 0px;
+	display: inline-block;
+}
+
+blockquote p {
+	margin: 5px;
+	padding: 15px;
+	background-color: #006780;
+	border-radius: 5px;
+}
+
+/* unimportant, gives a little background for the test button */
+div#test-link-bg {
+	background-color: black;
+	display: inline-block;
+	border: 5px black;
+	padding: 5px black;
+	height: 30px;
+	width: 40px;
+	position: fixed;
+	top: 7.5px;
+	left: 7.5px;
+}

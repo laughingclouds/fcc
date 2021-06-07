@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <link rel="stylesheet" href="survey_form_style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Page Heading</h1>
+        <p id="description">
+            Hi! Take part in this survey and get free cookies!
+            <br><br>
+            [pst, wanna test my page? Top left...top left...]
+        </p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <fieldset class="fieldset-flex" id="survey-form-child-fieldset">
+                <legend>Form</legend>
+
+                <!-- Name input -->
+                <div>
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" required placeholder="Enter your name.">
+                </div>
+
+                <!-- Email input -->
+                <div>
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" required placeholder="Enter you email.">
+                </div>
+
+                <!-- Number input -->
+                <div>
+                    <label for="number" id="number-label">[Some number] (optional)</label>
+                    <input type="number" min="0" max="60" id="number" placeholder="Enter [Some number]">
+                </div>
+
+                <!-- Dropdown menu -->
+                <div>
+                    <label for="dropdown">Select an option</label>
+                    <select id="dropdown" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="First Option">First Option</option>
+                        <option value="Second Option">Second Option</option>
+                        <option value="Third Option">Third Option</option>
+                    </select>
+                </div>
+                
+                <!-- The radio buttons -->
+                <fieldset class="fieldset-flex fieldset-child-flex">
+                    <legend>Choose (change later)</legend>
+                    <div>
+                        <input type="radio" value="first" name="radio" id="first">
+                        <label for="first">First</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="second" name="radio" id="second">
+                        <label for="second">Second</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="third" name="radio" id="third">
+                        <label for="third">Third</label>
+                    </div>
+                </fieldset>
+                
+                <!-- The checkboxes -->
+                <fieldset class="fieldset-flex fieldset-child-flex">
+                    <legend>Select (change later)</legend>
+                    <div>
+                        <input type="checkbox" value="first" name="checkbox" id="first">
+                        <label for="first">First</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" value="second" name="checkbox" id="second">
+                        <label for="second">Second</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" value="third" name="checkbox" id="third">
+                        <label for="third">Third</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="textarea">More to say?</label>
+                    <textarea id="textarea" placeholder="Enter your thoughts here..." cols="30" rows="10"></textarea>
+                </div>
+
+                <input type="submit" id="submit" value="Submit">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <article>
+            <h2>A few issues:</h2>
+            <p>
+                This page won't work as fantastic on a phone as it does on a desktop browser...part of the reason is that phones have smaller screen.
+                The other problem is my incompetence :/ I'll improve this later on. One of the ways you could have a better display of the page, is by
+                changing to landscape mode for now. (When on the phone)
+            </p>
+        </article>
+    </footer>
+</body>
+</html>

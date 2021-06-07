@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        header, main section {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        header {
+            position: fixed;
+            flex-direction: row;
+            align-items: center;
+            top: 0;
+            margin: 0;
+            background-color: grey;
+        }
+
+        main {
+            position: relative;
+            top: 20px;
+        }
+
+        main section {
+            flex-direction: column;
+        }
+        img#header-img {
+            width: 80px;
+            height: 80px;
+            padding: 0px;
+            margin: 0px;    
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <figure>
+            <img id="header-img" src="https://cdn.discordapp.com/attachments/839836667657060403/844699260808331274/IC_logo_blue_glowing_font_black-bg_transparent_glowing.png" alt="logo">
+        </figure>
+
+        <nav id="nav-bar">
+            <a href="#first-article" class="nav-link">First Link</a>
+            <a href="#second-article" class="nav-link">Second Link</a>
+            <a href="#third-article" class="nav-link">Third Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article id="first-article">
+                <h2>First Article</h2>
+            </article>
+
+            <article id="second-article">
+                <h2>Second Article</h2>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+
+            <article id="third-article">
+                <h2>Third Article</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+                    <input id="submit" type="submit" value="Get Started">
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
