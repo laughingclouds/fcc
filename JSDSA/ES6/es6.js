@@ -115,3 +115,20 @@ function removeFirstTwo(list) {
 // Use Destructuring Assignment to Pass an Object as a Function's Parameters
 const stats = {max: 56.78, median: 34.54, min: -0.75};
 const half = ({max, min}) => (max + min) / 2.0; 
+
+// Create Strings using Template Literals
+// make use of backticks not quotes for this one
+const person = {name: "First Name", age: 56};
+const greeting = `Hello my name is ${person.name}`;
+
+// Create Strings using Template Literals
+const result = {
+    failure: ["no-var", "var-on-top", "linebreak"],
+};
+const makeList = arr => {
+    const str_cr = a => `<li class="text-warning">${a}</li>`;
+    const failureItems = arr.map(item => str_cr(item));
+    return failureItems;
+}
+// a one-liner would be like this
+const makeList = arr => arr.map(a => `<li class="text-warning">${a}</li>`);
