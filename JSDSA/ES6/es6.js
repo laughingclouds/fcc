@@ -90,3 +90,28 @@ const { today, tomorrow } = HIGH_TEMPERATURES;
 // Use Destructuring Assignment to Assign Variables from Objects
 const { name: userName, age: userAge } = user;
 const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
+
+// Use Destructuring Assignment to Assign Variables from Nested Objects
+const LOCAL_FORECAST = {
+    yesterday: { low: 61, high: 75 },
+    today: { low: 64, high: 77 },
+    tomorrow: { low: 68, high: 80 }
+};
+
+const { today: { low: lowToday, high: highToday } } = LOCAL_FORECAST;
+
+// Use Destructuring Assignment to Assign Variables from Arrays
+// more specifically, swap values of two variables
+let a = 8, b = 6;
+[a, b] = [b, a];
+
+// Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements
+let source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list) {
+  const [a, b, ...arr] = list; 
+  return arr;
+}
+
+// Use Destructuring Assignment to Pass an Object as a Function's Parameters
+const stats = {max: 56.78, median: 34.54, min: -0.75};
+const half = ({max, min}) => (max + min) / 2.0; 
