@@ -106,19 +106,19 @@ let a = 8, b = 6;
 [a, b] = [b, a];
 
 // Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements
-let source = [1,2,3,4,5,6,7,8,9,10];
+let source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function removeFirstTwo(list) {
-  const [a, b, ...arr] = list; 
-  return arr;
+    const [a, b, ...arr] = list;
+    return arr;
 }
 
 // Use Destructuring Assignment to Pass an Object as a Function's Parameters
-const stats = {max: 56.78, median: 34.54, min: -0.75};
-const half = ({max, min}) => (max + min) / 2.0; 
+const stats = { max: 56.78, median: 34.54, min: -0.75 };
+const half = ({ max, min }) => (max + min) / 2.0;
 
 // Create Strings using Template Literals
 // make use of backticks not quotes for this one
-const person = {name: "First Name", age: 56};
+const person = { name: "First Name", age: 56 };
 const greeting = `Hello my name is ${person.name}`;
 
 // Create Strings using Template Literals
@@ -132,3 +132,56 @@ const makeList = arr => {
 }
 // a one-liner would be like this
 const makeList = arr => arr.map(a => `<li class="text-warning">${a}</li>`);
+
+// Write Concise Object Literal Declarations Using Object Property Shorthand
+const getMousePosition = (x, y) => ({
+    x: x,
+    y: y
+});
+// With es6, this trims down to
+const getMousePosition = (x, y) => ({ x, y });
+// Write Concise Declarative Functions with ES6
+const person = {
+    name: "Taylor",
+    sayHello() {
+        return `Hello! My name is ${this.name}`;
+    }
+}
+
+const bicycle = {
+    gear: 2,
+    setGear(newGear) {
+        this.gear = newGear;
+    }
+}
+// Use class Syntax to Define a Constructor Function
+class SpaceShuttle {
+    constructor(targetPlanet) {
+        this.targetPlanet = targetPlanet;
+    }
+}
+const zeus = new SpaceShuttle('Jupiter');
+
+class Vegetable {
+    constructor(veggieName) {
+        this.name = veggieName;
+    }
+}
+
+// Use getters and setters to Control Access to an Object
+class Thermostat {
+    constructor(temp) {
+        this._temp = temp;
+    }
+    to_c = f => 5 / 9 * (f - 32);
+    to_f = c => (9 * c) / 5 + 32;
+
+    get temperature() {
+        this.to_c(this._temp);
+    }
+
+    set temperature(c) {
+        this._temp = this.to_f(c);
+    }
+}
+const thermos = new Thermostat(76);
