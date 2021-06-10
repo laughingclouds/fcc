@@ -185,3 +185,7 @@ class Thermostat {
     }
 }
 const thermos = new Thermostat(76);
+
+// Use export to Share a Code BlockPassed
+import { add, subtract, uppercaseString, lowercaseString } from "./export_these";
+add(1, 2); subtract(2, 5); uppercaseString("wadw"); lowercaseString("WADW");
