@@ -5,3 +5,7 @@ const uppercaseString = string => string.toUpperCase();
 const lowercaseString = string => string.toLowerCase();
 
 export { add, subtract, uppercaseString, lowercaseString };
+
+export default function(x, y) {
+    return x + y;
+}

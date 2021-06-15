@@ -191,3 +191,5 @@ import { add, subtract, uppercaseString, lowercaseString } from "./export_these"
 add(1, 2); subtract(2, 5); uppercaseString("wadw"); lowercaseString("WADW");
 
 import * as stringFunctions from "./export_these";
+// Import a Default Export
+import subtract from "./export_these";
