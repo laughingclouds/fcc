@@ -1,11 +1,8 @@
 const add = (x, y) => x + y;
 const subtract = (x, y) => Math.max(x, y) - Math.min(x, y);
-
-const uppercaseString = string => string.toUpperCase();
-const lowercaseString = string => string.toLowerCase();
-
+const uppercaseString = (string) => string.toUpperCase();
+const lowercaseString = (string) => string.toLowerCase();
 export { add, subtract, uppercaseString, lowercaseString };
-
-export default function(x, y) {
-    return x + y;
+export default function (x, y) {
+    return x - y;
 }
