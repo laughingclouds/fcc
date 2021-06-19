@@ -164,3 +164,15 @@ add(1, 2);
 subtract(2, 5);
 uppercaseString("wadw");
 lowercaseString("WADW");
+// Create a JavaScript Promise
+const myPromise = new Promise((resolve, request) => { });
+// Complete a Promise with resolve and reject
+const makeServerRequest = new Promise((resolve, reject) => {
+    let responseFromServer;
+    if (responseFromServer) {
+        resolve("Data received");
+    }
+    else {
+        reject();
+    }
+});
