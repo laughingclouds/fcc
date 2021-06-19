@@ -219,3 +219,16 @@ lowercaseString("WADW");
 import * as stringFunctions from "./export_these";
 // Import a Default Export
 import default_subtract from "./export_these";
+
+// Create a JavaScript Promise
+const myPromise = new Promise((resolve, request) => {});
+
+// Complete a Promise with resolve and reject
+const makeServerRequest = new Promise((resolve, reject) => {
+	let responseFromServer;
+	if(responseFromServer) {
+		resolve("Data received");
+	} else {
+		reject()
+	}
+});
